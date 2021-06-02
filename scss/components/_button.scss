@@ -1,0 +1,17 @@
+.btn {
+    text-decoration: none;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-secondary {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.btn-light {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}

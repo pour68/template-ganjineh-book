@@ -1,0 +1,49 @@
+$displays: (none, block, inline, inline-block, flex, grid);
+
+@each $display in $displays {
+    .d-#{$display} {
+        display: #{$display};
+    }
+}
+
+$justifies: (start: "flex-start");
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-column {
+    flex-direction: column;
+}

@@ -1,0 +1,41 @@
+*, *::before, *::after  {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'BYekan', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--light-color);
+}
+
+h1,h2,h3 ,h4 ,h5 ,h6 {
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input[type="text"] { 
+ border: none;
+ font-family: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+}

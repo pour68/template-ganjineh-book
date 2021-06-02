@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title> homepage </title>
+</head>
+
+<body>
+
+    <!-- quick access -->
+    <div class="container">
+        <header class="header d-flex justify-content-space-between align-items-center">
+            <a href="#" class="header__logo text-decoration-none">
+                <i class="fas fa-book-reader"></i> <span>گنجینه کتاب</span>
+            </a>
+
+            <div class="header__search">
+                <form action="/">
+                    <input type="text" name="query" id="query" class="round-sm" placeholder="جستجو عنوان کتاب..." />
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="header__auth">
+                <a class="btn btn-secondary">
+                    ورود/ثبت نام
+                </a>
+            </div>
+
+            <a class="header__nav">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bars" id="hamburger-menu"></i>
+            </a>
+        </header>
+    </div>
+
+    <!-- navigation menu -->
+    <div class="container mx-auto">
+        <div class="nav justify-content-space-between align-items-center" id="menu">
+            <nav class="nav__menu">
+                <ul class="nav__list d-flex">
+                    <li><a href="#" class="active">صفحه اصلی</a></li>
+                    <li class="px-4"><a href="#">لیست کتاب ها</a></li>
+                    <li class="px-4"><a href="#">تماس با ما</a></li>
+                    <li class="px-4"><a href="#">درباره ما</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:09354425459" class="nav__tel">
+                <span>تلفن تماس</span> <span class="english-font text-xs">09354425459</span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content d-flex flex-column justify-content-center">
+                    <h1>گنجینه کتاب</h1>
+
+                    <div class="hero__slogan">
+                        <span>هر کتابی</span>
+                        <span class="text-lg">تو هر شرایطی</span>
+                        <span>هر کجا که باشی</span>
+                        <span class="text-lg">ما به دستت می رسونیم.</span>
+                    </div>
+
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn-secondary ml-1">لیست کتاب</a>
+                        <a href="#" class="btn btn-light">سفارش تلفنی</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the best books -->
+        <div class="container">
+            <div class="book">
+                <div class="book__content">
+                    <h2>لیست کتاب های برتر</h2>
+
+                    <div class="book__list d-grid">
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/artem-maltsev-3n7DdlkMfEg-unsplash.jpg" alt="تست" />
+                                <figcaption>J. K. Rowling</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">هری پاتر کتاب جادو</h3>
+                                <div>
+                                    <span class="tag">تخیلی</span> <span class="tag">ماجراجوبی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/game-of-thrones.jpg" alt="تست" />
+                                <figcaption>Goarge RR. martin</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">بازی تاج و تخت</h3>
+                                <div>
+                                    <span class="tag">تخیلی</span> <span class="tag">ماجراجوبی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/die-hotel.jpg" alt="تست" />
+                                <figcaption>روشنک رستم</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">هتل مرگ</h3>
+                                <div>
+                                    <span class="tag">ترسناک</span> <span class="tag">جنایی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/love.jpg" alt="تست" />
+                                <figcaption>آریا خدارحمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">عشق مقدس</h3>
+                                <div>
+                                    <span class="tag">عاشقانه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/crush.jpg" alt="تست" />
+                                <figcaption>آریا خدارحمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">دیوانتم</h3>
+                                <div>
+                                    <span class="tag">عاشقانه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- latest books -->
+        <div class="container">
+            <div class="book">
+                <div class="book__content">
+                    <h2>لیست آخرین کتاب</h2>
+
+                    <div class="book__list d-grid">
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/food.jpg" alt="تست" />
+                                <figcaption>نوا محمدی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">تغذیه سالم</h3>
+                                <div>
+                                    <span class="tag">علوم تغدیه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/code.jpg" alt="تست" />
+                                <figcaption>پوریا نایب ابوالقاسم</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">آموزش سی شارپ</h3>
+                                <div>
+                                    <span class="tag">برنامه نویسی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/fruits.jpg" alt="تست" />
+                                <figcaption>مهدی اسکندری</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">میوه ها</h3>
+                                <div>
+                                    <span class="tag">علوم تغذیه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/city.jpg" alt="تست" />
+                                <figcaption>آریا خدارحمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">شهرسازی مدرن</h3>
+                                <div>
+                                    <span class="tag">علمی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/die-hotel.jpg" alt="تست" />
+                                <figcaption>روشنک رستمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">هتل مرگ</h3>
+                                <div>
+                                    <span class="tag">جنایی</span> <span class="tag">ترسناک</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/game-of-thrones.jpg" alt="تست" />
+                                <figcaption>Goarge RR. martin</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">تاج و تخت</h3>
+                                <div>
+                                    <span class="tag">تخیلی</span> <span class="tag">ماجراجوبی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/die-hotel.jpg" alt="تست" />
+                                <figcaption>J. K. Rowling</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">هری پاتر کتاب جادو</h3>
+                                <div>
+                                    <span class="tag">تخیلی</span> <span class="tag">ماجراجوبی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/nature.jpg" alt="تست" />
+                                <figcaption>مهدی اسکندری</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">آمازون بهشت جهان</h3>
+                                <div>
+                                    <span class="tag">گردشگری</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/andreas-wagner.jpg" alt="تست" />
+                                <figcaption>آریا خدارحمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">راه تو را می خواند</h3>
+                                <div>
+                                    <span class="tag">تخیلی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book__item">
+                            <figure>
+                                <img src="img/love.jpg" alt="تست" />
+                                <figcaption>آریا خدارحمی</figcaption>
+                            </figure>
+                            <div>
+                                <h3 class="book__title">عشق مقدس</h3>
+                                <div>
+                                    <span class="tag">عاشقانه</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content d-grid">
+
+                <div class="footer__intro">
+                    <h4>آشنایی اولیه</h4>
+                    <p>گنجینه کتاب مجموعه ای کامل از تمام کتاب های روز دنیا</p>
+                </div>
+
+                <div class="footer__access">
+                    <h4>دسترسی سریع</h4>
+
+                    <ul>
+                        <li>
+                            <a href="#">لیست کتاب ها</a>
+                        </li>
+                        <li>
+                            <a href="#">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__map">
+                    <h4>آدرس</h4>
+
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.751074059052!2d51.24991041474848!3d35.75692263342543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8de4b032408af3%3A0xd890c67cb10105f0!2zVGVocmFuIFByb3ZpbmNlLCBUZWhyYW4sIERpc3RyaWN0IDIyLCDYrtuM2KfYqNin2YYg2LjZgdix2IwgSXJhbg!5e0!3m2!1sen!2sfr!4v1622642762745!5m2!1sen!2sfr"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

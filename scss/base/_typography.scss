@@ -1,0 +1,20 @@
+$decorations: (none, overline, line-through, underline);
+
+@each $decoration in $decorations {
+    .text-decoration-#{$decoration} {
+        text-decoration: #{$decoration};
+    }
+}
+
+.english-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+$sizes: ("xs": 0.75rem, "sm":0.85rem, "md": 1rem, "lg":1.5rem, "xl": 2rem);
+
+@each $key, $value in $sizes {
+    .text-#{$key} {
+        font-size: $value;
+       }
+}

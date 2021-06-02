@@ -1,0 +1,48 @@
+.hero {
+    position: relative;
+    background-image: url(../../img/fitore-fazliu-Bl-UtVziFw0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 65vh;
+
+    &__overlay {
+        position: absolute;
+        width: 510px;
+        background-image: linear-gradient(to left, 
+        rgba(255, 255, 255, 0.85),
+        rgba(252, 227, 212, 0.85) 30%);
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__content {
+        position: absolute;
+        height: 65vh;
+        z-index: 2;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__slogan {
+        span {
+            display: block;
+            line-height: 1.5;
+        }
+    }
+
+    &__actions {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) { 
+    .hero {
+        &__overlay {
+            width: 100%;
+        }
+    }
+}
